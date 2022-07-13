@@ -64,6 +64,7 @@ module.exports = function toReadable (number) {
 												case "9": arrayStr2 += 'nine hundred'; break;
 								}
 								switch(arrayStr[1]) {
+												case "1": arrayStr2 += ' ten'; break;
 												case "2": arrayStr2 += ' twenty'; break;
 												case "3": arrayStr2 += ' thirty'; break;
 												case "4": arrayStr2 += ' forty'; break;
