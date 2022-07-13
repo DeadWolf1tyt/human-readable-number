@@ -30,7 +30,7 @@ module.exports = function toReadable (number) {
 				} else if (arrayStr.length === 2 && number > 20) {
 								switch(arrayStr[0]) {
 												case "2": arrayStr2 += 'twenty'; break;
-												case "3": arrayStr2 += 'Thirty'; break;
+												case "3": arrayStr2 += 'thirty'; break;
 												case "4": arrayStr2 += 'forty'; break;
 												case "5": arrayStr2 += 'fifty'; break;
 												case "6": arrayStr2 += 'sixty'; break;
@@ -65,7 +65,7 @@ module.exports = function toReadable (number) {
 								}
 								switch(arrayStr[1]) {
 												case "2": arrayStr2 += ' twenty'; break;
-												case "3": arrayStr2 += ' Thirty'; break;
+												case "3": arrayStr2 += ' thirty'; break;
 												case "4": arrayStr2 += ' forty'; break;
 												case "5": arrayStr2 += ' fifty'; break;
 												case "6": arrayStr2 += ' sixty'; break;
