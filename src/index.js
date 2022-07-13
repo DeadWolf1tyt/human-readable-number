@@ -52,7 +52,7 @@ module.exports = function toReadable (number) {
 												case "0": break;
 								}
 								return arrayStr2;
-				} else if (arrayStr.length === 3) {
+				} else if ((number > 99 && number < 111) || (number > 119 && number < 211) || (number > 219 && number < 311) || (number > 319 && number < 411) || (number > 419 && number < 511) || (number > 519 && number < 611) || (number > 619 && number < 711) || (number > 719 && number < 811) || (number > 819 && number < 911) || (number > 919 && number < 1000)) {
 								switch(arrayStr[0]) {
 												case "1": arrayStr2 += 'one hundred'; break;
 												case "2": arrayStr2 += 'two hundred'; break;
@@ -87,6 +87,30 @@ module.exports = function toReadable (number) {
 												case "8": arrayStr2 += ' eight'; break;
 												case "9": arrayStr2 += ' nine'; break;
 												case "0": break;
+								}
+								return arrayStr2;
+				} else {
+							 switch(arrayStr[0]){
+												case "1": arrayStr2 += 'one hundred'; break;
+												case "2": arrayStr2 += 'two hundred'; break;
+												case "3": arrayStr2 += 'three hundred'; break;
+												case "4": arrayStr2 += 'four hundred'; break;
+												case "5": arrayStr2 += 'five hundred'; break;
+												case "6": arrayStr2 += 'six hundred'; break;
+												case "7": arrayStr2 += 'seven hundred'; break;
+												case "8": arrayStr2 += 'eight hundred'; break;
+												case "9": arrayStr2 += 'nine hundred'; break;
+								}
+								switch(arrayStr[2]) {
+												case "1": arrayStr2 += ' eleven'; break;
+												case "2": arrayStr2 += ' twelve'; break;
+												case "3": arrayStr2 += ' thirteen'; break;
+												case "4": arrayStr2 += ' fourteen'; break;
+												case "5": arrayStr2 += ' fifteen'; break;
+												case "6": arrayStr2 += ' sixteen'; break;
+												case "7": arrayStr2 += ' seventeen'; break;
+												case "8": arrayStr2 += ' eighteen'; break;
+												case "9": arrayStr2 += ' nineteen'; break;
 								}
 								return arrayStr2;
 				}
