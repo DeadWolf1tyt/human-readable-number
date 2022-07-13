@@ -5,6 +5,7 @@ module.exports = function toReadable (number) {
 				let arrayStr2 = '';
 				if (number < 21) {
 								switch(string) {
+												case 0: string = 'zero'; break;
 												case 1: string = 'one'; break;
 												case 2: string = 'two'; break;
 												case 3: string = 'three'; break;
